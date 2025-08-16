@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile Card</title>
+  <!-- Tailwind Play CDN (fast prototyping only) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body{
+        font-family: "HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <!--Layer 1: Green-->
+    <div class="bg-lime-300 rounded-2xl w-[380px]">
+        <!--Layer 2: Black (Top)-->
+        <div class="bg-black rounded-2xl items-center p-4">
+            <!--2A.Status-->
+            <div class="flex justify-between text-neutral-400 text-sm">
+                <!--Left-->
+                <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+                    <span>Available for work</span>
+                </div>
+                <!--Right-->
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <!-- Clock Circle -->
+                        <circle cx="12" cy="13" r="7" stroke="currentColor" stroke-width="2"/>
+                        <!-- Clock Hands -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13V9m0 4h3" />
+                        <!-- Alarm Bells -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5l2-2M19 5l-2-2" />
+                    </svg>
+                    <span>7:15PM</span>
+                </div>
+            </div>
+
+            <!--2B.Profile Info-->
+            <div class="flex items-center gap-4 mt-6">
+                <img class="w-14 h-14 rounded-full border-2 border-gray-700" src="profile.png" alt="">
+                <div>
+                    <h2 class="text-neutral-300 text-lg font-semibold">Hasna Nisrina</h2>
+                    <p class="text-neutral-400 text-sm">Data Analyst</p>
+                </div>
+            </div>
+
+            <!--2C.Button-->
+            <div class="flex items-center justify-between mt-6 gap-4">
+                <!--Left-->
+                <button class="flex items-center justify-center gap-2 bg-gray-800 w-full rounded-2xl py-3 shadow-inner text-neutral-200">
+                    Hire Me
+                </button>
+
+                <!--Right-->
+                <button class="flex items-center justify-center gap-2 bg-gray-800 w-full rounded-2xl py-3 shadow-inner text-neutral-200">
+                    Copy Email
+                </button>
+            </div>
+        </div>
+
+        <!--Bottom-->
+        <div class="flex items-center justify-center py-3 text-black text-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            <p>
+                Currently High on Creativity
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
