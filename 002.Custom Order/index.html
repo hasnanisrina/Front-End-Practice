@@ -14,55 +14,116 @@
   </style>
 </head>
 
-<body class="bg-gradient-to-br from-rose-100 to-orange-50">
+<body class="bg-gradient-to-r from-rose-300 via-rose-100 to-red-300">
     <!--1.Navbar-->
-    <nav class="bg-white rounded-xl shadow-xl justify-between items-center">
+    <nav class="flex flex-rows max-w-xl bg-white rounded-xl shadow-xl justify-between items-center mx-auto my-5 px-3 py-1">
         <!--Left-->
-        <div>
+        <div class="text-black font-semibold">
             LOGO
         </div>
 
         <!--Right-->
-        <div>
-            <ul>
-                <li>Home</li>
-                <li>How It Works</li>
-                <li>Resources</li>
-            </ul>
+        <div class="md:flex items-center space-x-6 text-black hidden">
+            <a href="#">Home</a>
+            <a href="#">How It Works</a>
+            <a href="#">Resources</a>
+            <div class="flex relative bg-red-400 text-white rounded-xl py-1 px-2 shadow-xl font-medium">
+                <a href="#">Install Customizer</a>
+            </div>
         </div>
     </nav>
 
 
     <!--2.Hero Section-->
-    <section>
+    <section class="text-center px-6 mt-8">
         <!--2A.Badge-->
-        <div>
-
+        <div class=" bg-white rounded-xl py-1 shadow-md inline-flex px-3 gap-3 items-center justify-center">
+            <span class="bg-red-400 rounded-full py-1 px-2 text-white">31%</span>
+            Increased AOV Value
         </div>
 
         <!--2B.Heading-->
-        <h1>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-amber-950 mb-4 mt-4 text-center">
             Cut Support Tickets & Let Customers Edit Orders
         </h1>
 
         <!--2C.Sub Heading-->
-        <p>
+        <p class="text-amber-950 max-w-2xl mx-auto mb-4">
             Let Customers Edit Orders Themselves: Save your customers time and yourself from support email headaches
         </p>
 
         <!--2D.CTA-->
-        <div>
+        <div class="flex flex-rows justify-center gap-4">
             <!--CTA 1-->
-            <button>
+            <button class="bg-white text-red-400 px-3 py-1 rounded-xl shadow-xl">
                 Get Demo
             </button>
 
             <!--CTA 2-->
-            <button>
+            <button class="bg-red-400 text-white px-3 py-1 rounded-xl shadow-xl">
                 Install Customizer
             </button>
         </div>
+    </section>
 
+    <!--3.Floating Cards-->
+    <section class="relative mt-16 flex justify-center py-10">
+        <!--3A.Center Card-->
+        <div class="bg-white rounded-2xl px-3 py-3 shadow-xl w-80 mt-10 relative z-10">
+            <h3 class="font-bold text-lg">Your Order is Completed!</h3>
+            <div class="flex items-left justify-left gap-4 mt-4 px-4">
+                <img class="w-16 h-16 rounded-lg" src="tshirt.png" alt="">
+                <div class="text-left">
+                    <p class="text-green-600 font-bold">$15</p>
+                    <p class="text-sm text-gray-500">Quantity:<span class="text-black font-bold">1</span></p>
+                </div>
+            </div>
+            <button class="text-red-400 text-md bg-red-100 w-full rounded-lg mt-3 shadow-xl">Edit Your Order</button>
+            <p class="text-sm text-black text-center mt-2">You have <span class="text-red-400">29 mins</span> to edit</p>
+        </div>
+
+        <!--3B.Side Card:Left Top-->
+        <div class="absolute left-48 -top-4 bg-white rounded-xl shadow-lg p-4 w-56">
+            <p class="font-medium text-sm mb-2">Change Quantities / Remove Items</p>
+            <input type="text" placeholder="Phone" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm mb-2">
+            <input type="email" placeholder="Email" class="w-full border border-red-300 rounded-lg px-3 py-2 text-sm">
+        </div>
+
+        <!--3C.Side Card:Left Bottom-->
+        <div class="absolute left-48 -bottom-4 bg-white rounded-xl shadow-lg p-4 w-56 mt-10">
+            <p class="font-medium text-sm mb-2">Change Quantities / Remove Items</p>
+            <input type="text" placeholder="Update Shipping Address" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm mb-2">
+            <input type="text" placeholder="City" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm">
+        </div>
+
+        <!--3D.Side Card:Right Top-->
+        <div class="absolute right-48 -top-4 bg-white rounded-xl shadow-lg p-4 w-56">
+            <p class="font-medium text-sm mb-2">Change Quantities / Remove Items</p>
+            <select class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm">
+                <option>Free Delivery - Fri, 7 March</option>
+                <option>Fast Delivery - Fri, 3 March</option>
+            </select>
+        </div>
+
+        <!--3E.Side Card:Right Bottom-->
+        <div class="absolute right-48 bottom-4 bg-white rounded-xl shadow-lg p-4 w-56">
+            <p class="font-medium text-sm mb-2">Change Quantities / Remove Items</p>
+            <div class="flex items-center gap-3">
+                <img src="tshirt.png" alt="Product" class="w-10 h-10 rounded-lg">
+                <div class="flex items-center gap-2">
+                <button class="bg-gray-100 px-2 rounded">-</button>
+                <span>2</span>
+                <button class="bg-gray-100 px-2 rounded">+</button>
+                </div>
+        </div>
+
+        <!--3F.SVG Lines -->
+        <svg class="absolute w-full h-full top-0 left-0 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 45% 60% C 30% 40%, 20% 40%, 15% 35%" stroke="#fbb6b6" stroke-width="2" fill="none"/>
+            <path d="M 45% 60% C 30% 65%, 20% 75%, 15% 80%" stroke="#fbb6b6" stroke-width="2" fill="none"/>
+            <path d="M 55% 60% C 70% 40%, 80% 40%, 85% 35%" stroke="#fbb6b6" stroke-width="2" fill="none"/>
+            <path d="M 55% 60% C 70% 65%, 80% 75%, 85% 80%" stroke="#fbb6b6" stroke-width="2" fill="none"/>
+        </svg>
     </section>
     
 </body>
