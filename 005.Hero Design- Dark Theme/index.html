@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hero Design Dark Theme</title>
+  <!-- Tailwind Play CDN (fast prototyping only) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body{
+        font-family: "HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+  </style>
+</head>
+
+
+<body class="bg-black">
+   <!--1.Navbar--> 
+   <nav class="flex justify-between items-center py-4 px-6">
+    <!--Left-->
+    <div class="flex">
+        <img src="#" alt="">
+        <div class="text-white text-xl font-semibold">Sprrrint</div>
+    </div>
+
+    <!--Right-->
+    <div class="flex">
+        <div class="text-white rounded-full border border-gray-600 bg-zinc-900 px-4 py-2 text- shadow-inside shadow-xl">Request Access</div>
+    </div>
+   </nav>
+
+   <!--2.Hero Section-->
+   <section class="text-center px-6 py-12 max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-5xl text-gray-300 font-extrabold mb-4">The Smarter Way to Manage Emails</h1>
+        <p class="text-gray-300 mb-6">Auto-segmentation, smart filtering, AI auto-complete, and built-in CRM.
+        <br>
+        Stop wasting time on repetitive tasks.</p>
+        <button class="text-black font-semibold bg-lime-400 shadow-xl px-6 py-3 rounded-full">Request Access</button>
+        <p class="text-sm text-gray-400 mt-2">Get 3 month free now</p>
+   </section>
+
+   <!--3.Email Dashboard-->
+   <section class="relative max-w-5xl mx-auto px-6">
+    <!--3A. Border-->
+    <div class="bg-black rounded-2xl shadow-2xl border border-gray-700 overflow-hidden relative">
+      
+        <!--3A1. Side Bar-->
+        <aside class="w-64 bg-black px-4">
+            <h1 class="text-white font-semibold text-xl mb-4 mx-3">Aligno</h1>
+            <h2 class="text-sm text-gray-500 font-semibold mt-4 mx-3">Main Menu</h2>
+            <ul class="space-y-2 mb-6">
+                <li class="text-sm text-gray-600 mx-3 mt-2">Search</li>
+                <li class="text-sm text-gray-600 mx-3 mt-2">Files</li>
+                <li class="text-sm text-gray-600 mx-3 mt-2">Inbox</li>
+                <li class="text-sm text-gray-600 mx-3 mt-2">Time Tracking</li>
+            </ul>
+            
+        </aside>
+    </div>
+   </section>
+</body>
+
+</html>
